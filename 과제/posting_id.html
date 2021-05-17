@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- jquery 사용 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- 부트스트랩 사용 -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <title>ko_da</title>
+    <style>
+        * {box-sizing: border-box;}
+        body {margin: 0;}
+        a{text-decoration: none;}
+        a:link, a:visited, a:active {color: inherit};
+
+        #main {
+            display: flex;
+        }
+
+        header {
+            background-color: rgba(211, 211, 211, 0.5);
+            padding: 30px;
+        }
+    
+        .navbar {
+            display: flex;
+            position: sticky;
+            top: 0;
+            background-color: rgb(254, 255, 169);
+        }
+        .navbar a {
+            padding: 14px;
+            margin-left: 15px;
+        }
+        .navbar a:hover {
+            color: black;
+            background-color: white;
+        }
+        footer {
+            padding:20px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .aside {
+            flex: 30%;
+            padding: 30px;
+            margin: 30px;
+            min-height: 100%;
+            padding-bottom: 50px;
+        }
+        .footer {
+            background-color: rgb(254, 255, 169);
+
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -50px;
+        }
+  
+        #main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 부트스트랩을 통해 페이지에 여백을 만들어 줌 -->
+    <!-- <div class = "container"> <br>
+        
+    <a href="index.html" style= "color: black;";><h1>ko_da</h1></a>   -->
+
+    <!-- 위의 코드 header로 수정 -->
+
+    <header class="header">
+        <a href="index.html">
+            <h1>ko_da</h1>
+        </a>
+    </header>
+
+    <!-- 부트스트랩을 통해 네비게이션 바 생성 -->
+    <!-- <ul class="nav nav-tabs">
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class = "active"><a href="profile.html" style= "color: black;">프로필</a></li>
+            <li role="presentation"><a href="posting.html" style= "color: black;">게시물</a></li>
+            <li role="presentation"><a href="message.html" style= "color: black;">방명록</a></li>
+            target 속성을 사용하여 페이지를 새 창에서 열 수 있도록 함 -->
+    <!-- <li role="presentation"><a href="https://github.com/KodaHye" style= "color: black;" target = "_blank">ko_da의 깃허브</a></li>
+        </ul> --> 
+
+    <!-- 시맨틱코드로 nav로 수정 -->
+    <nav class="navbar">
+        <a href="profile.html">프로필</a>
+        <a href="posting.html">게시물</a>
+        <a href="message.html">방명록</a>
+    </nav>
+
+    <aside class = "aside">
+        
+      <font size = "80em" color = "black">Interactive Developer</font> <br><br>
+  
+
+    <a href="https://www.youtube.com/channel/UCdeWxKJuvtUG2xyN6pOJEvA">
+        <img src="id.png" style="max-width: 80%; height: auto;"></a>
+     <br><br>
+    나는 원래 컴퓨터공학부에 진학할 생각이 전혀 없었다. <br>
+    그래도 컴퓨터공학부에 진학한 이상, 내가 공부할 수 있는 것들은 열심히 하기 위해 노력했다! <br><br>
+
+    대학교에 오고 지난 2년 동안 공부를 했지만, 나는 내가 무엇을 하고 싶은지 알지 못했다. <br>
+    그러다가 얼마 전 유튜브에서 interactive developer 라는 채녈을 보게 되었다. 그 분이 만드신 포트폴리오와 프로젝트를 봤을 때 정말 입을 다물지 못했다! <br>
+    자신의 주변에 있는 사소한 것들에서부터 아이디어를 얻으며 프로젝트를 진행하고, 자신의 일을 즐기면서 하는 그가 정말 부러웠다! <br>
+    그리고  그 분의 영상을 보고 그 분과 같이 멋있는 사람이 되고 싶다고 생각했다. <br>
+    그래서 현재 나의 꿈은 그 분처럼 멋진 개발자가 되는 것이다. <br> <br>
+
+    나도 나중에 내가 하는 일을 즐기면서 하고 싶고, 많은 사람들이 내가 만든 프로젝트를 접하고 즐거워 하면 좋겠다. <br>
+    아직 많이 부족하지만, 할 수 있다! 난 포기하지 않을 것이다!!👊 <br><br>
+    
+    <hr color = "grey" size = "1">
+    댓글달기: <br> <textarea cols="100" rows="3"></textarea> <br>
+
+    <input type="submit">
+
+    <!-- 부트스트랩에서 페이지네이션 사용! -->
+    <nav>
+        <ul class="pagination">
+          <li>
+            <a href="posting_id.html" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li><a href="posting_id.html">1</a></li>
+          <li><a href="posting_likelion.html">2</a></li>
+          <li>
+            <a href="posting_likelion.html" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+
+
+    <!-- footer 추가! -->
+    <footer class = "footer">
+        <a href="posting_id.html"><h5>▴ 맨 위로</h5></a>
+  
+    </footer>
+</body>
